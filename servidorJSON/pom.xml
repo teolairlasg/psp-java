@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cf.iesguara</groupId>
+	<artifactId>servidorJSON</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Proyecto Enviar JSON</name>
+	<description>Este proyecto son 2 procesos que se comunican con JSON</description>
+	<dependencies>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<!-- Desde la versión 2.10 en adelante, pero no una versión
+			que comience por 3 -->
+			<version>[2.10,3.0)</version>
+		</dependency>
+	</dependencies>
+</project>

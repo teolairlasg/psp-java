@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-18">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/tlairla/Downloads/commons-net-3.9.0-bin/commons-net-3.9.0/commons-net-3.9.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/tlairla/Downloads/commons-net-3.9.0-bin/commons-net-3.9.0/apidocs/"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/tlairla/Downloads/commons-net-3.9.0-bin/commons-net-3.9.0/commons-net-3.9.0-sources.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
