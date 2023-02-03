@@ -1,5 +1,23 @@
 package aemet;
 
+class Geo850{
+	private float value;
+	private boolean present;
+	public float getValue() {
+		return value;
+	}
+	public void setValue(float value) {
+		this.value = value;
+	}
+	public boolean isPresent() {
+		return present;
+	}
+	public void setPresent(boolean present) {
+		this.present = present;
+	} 
+}
+
+
 public class EstacionMeteo {
 	private String idema;
 	private float lon;
@@ -9,8 +27,8 @@ public class EstacionMeteo {
 	private String fint;
 	private float prec;
 	private float pacutp;
-	private float pliqtp;
-	private float psolt;
+	private float pliqt;
+	private float psoltp;
 	private float vmax;
 	private float vv;
 	private float vmaxu;
@@ -20,13 +38,13 @@ public class EstacionMeteo {
 	private float dmax;
 	private float dmaxu;
 	private float stdvv;
-	private float stdv;
+	private float stddv;
 	private float stdvvu;
 	private float stddvu;
 	private float hr;
 	private float inso;
 	private float pres;
-	private float pres_mar;
+	private float pres_nmar;
 	private float ts;
 	private float tss20cm;
 	private float tss5cm;
@@ -36,7 +54,7 @@ public class EstacionMeteo {
 	private float tamax;
 	private float vis;
 	private float geo700;
-	private float geo850;
+	private Geo850 geo850;
 	private float geo925;
 	private float rviento;
 	private float nieve;
@@ -88,17 +106,17 @@ public class EstacionMeteo {
 	public void setPacutp(float pacutp) {
 		this.pacutp = pacutp;
 	}
-	public float getPliqtp() {
-		return pliqtp;
+	public float getPliqt() {
+		return pliqt;
 	}
-	public void setPliqtp(float pliqtp) {
-		this.pliqtp = pliqtp;
+	public void setPliqt(float pliqtp) {
+		this.pliqt = pliqtp;
 	}
-	public float getPsolt() {
-		return psolt;
+	public float getPsoltp() {
+		return psoltp;
 	}
-	public void setPsolt(float psolt) {
-		this.psolt = psolt;
+	public void setPsoltp(float psolt) {
+		this.psoltp = psolt;
 	}
 	public float getVmax() {
 		return vmax;
@@ -154,11 +172,11 @@ public class EstacionMeteo {
 	public void setStdvv(float stdvv) {
 		this.stdvv = stdvv;
 	}
-	public float getStdv() {
-		return stdv;
+	public float getStddv() {
+		return stddv;
 	}
-	public void setStdv(float stdv) {
-		this.stdv = stdv;
+	public void setStddv(float stdv) {
+		this.stddv = stdv;
 	}
 	public float getStdvvu() {
 		return stdvvu;
@@ -190,11 +208,11 @@ public class EstacionMeteo {
 	public void setPres(float pres) {
 		this.pres = pres;
 	}
-	public float getPres_mar() {
-		return pres_mar;
+	public float getPres_nmar() {
+		return pres_nmar;
 	}
-	public void setPres_mar(float pres_mar) {
-		this.pres_mar = pres_mar;
+	public void setPres_nmar(float pres_mar) {
+		this.pres_nmar = pres_mar;
 	}
 	public float getTs() {
 		return ts;
@@ -250,10 +268,10 @@ public class EstacionMeteo {
 	public void setGeo700(float geo700) {
 		this.geo700 = geo700;
 	}
-	public float getGeo850() {
+	public Geo850 getGeo850() {
 		return geo850;
 	}
-	public void setGeo850(float geo850) {
+	public void setGeo850(Geo850 geo850) {
 		this.geo850 = geo850;
 	}
 	public float getGeo925() {
