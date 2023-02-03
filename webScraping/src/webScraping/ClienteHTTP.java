@@ -8,6 +8,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandler;
 import java.net.http.HttpResponse.BodyHandlers;
+import java.nio.charset.Charset;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -20,12 +21,12 @@ public class ClienteHTTP {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		HttpClient cliente = HttpClient.newHttpClient();
 		HttpRequest req = HttpRequest.newBuilder()
-				.uri(URI.create("https://www.meteoclimatic.net/perfil/ESARA2200000022002A"))
+				.uri(URI.create("https://www.w3schools.com/js/ajax_info.txt"))
 				.GET()
 				.build();
-		//Recibo la respuesta como string
+		//Recibo la respuesta como string // codificado con el charset iso-8859-15
 		HttpResponse<String> res = cliente.send(req, 
-				HttpResponse.BodyHandlers.ofString());
+				HttpResponse.BodyHandlers.ofString(/*Charset.forName("ISO-8859-15")*/));
 		
 		//Recibo la respuesta como Fichero descargado
 		//HttpResponse<Path> resPath = cliente.send(req,
@@ -38,14 +39,14 @@ public class ClienteHTTP {
 		//
 		Document doc = Jsoup.parse(res.body());
 		
-		Elements elementos = doc.select(".titolseccio");
-		
-		for (Element e:elementos) {
-			System.out.println(e.text());
-		}
+//		Elements elementos = doc.select("div.w3-example:nth-child(5)");
+//		
+//		for (Element e:elementos) {
+//			System.out.println(e.text());
+//		}
 		
 		
 		System.out.println(res);
-		//System.out.println(res.body());
+		System.out.println(res.body());
 	}
 }
