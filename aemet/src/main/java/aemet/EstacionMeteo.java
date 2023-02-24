@@ -1,5 +1,7 @@
 package aemet;
 
+import java.util.Date;
+
 class Geo850{
 	private float value;
 	private boolean present;
@@ -24,7 +26,7 @@ public class EstacionMeteo {
 	private float lat;
 	private float alt;
 	private String ubi;
-	private String fint;
+	private Date fint;
 	private float prec;
 	private float pacutp;
 	private float pliqt;
@@ -88,10 +90,10 @@ public class EstacionMeteo {
 	public void setUbi(String ubi) {
 		this.ubi = ubi;
 	}
-	public String getFint() {
+	public Date getFint() {
 		return fint;
 	}
-	public void setFint(String fint) {
+	public void setFint(Date fint) {
 		this.fint = fint;
 	}
 	public float getPrec() {
@@ -292,4 +294,17 @@ public class EstacionMeteo {
 	public void setNieve(float nieve) {
 		this.nieve = nieve;
 	}
+	@Override
+	public String toString() {
+		return "EstacionMeteo [idema=" + idema + ", lon=" + lon + ", lat=" + lat + ", alt=" + alt + ", ubi=" + ubi
+				+ ", fint=" + fint + ", prec=" + prec + ", pacutp=" + pacutp + ", pliqt=" + pliqt + ", psoltp=" + psoltp
+				+ ", vmax=" + vmax + ", vv=" + vv + ", vmaxu=" + vmaxu + ", vvu=" + vvu + ", dv=" + dv + ", dvu=" + dvu
+				+ ", dmax=" + dmax + ", dmaxu=" + dmaxu + ", stdvv=" + stdvv + ", stddv=" + stddv + ", stdvvu=" + stdvvu
+				+ ", stddvu=" + stddvu + ", hr=" + hr + ", inso=" + inso + ", pres=" + pres + ", pres_nmar=" + pres_nmar
+				+ ", ts=" + ts + ", tss20cm=" + tss20cm + ", tss5cm=" + tss5cm + ", ta=" + ta + ", tpr=" + tpr
+				+ ", tamin=" + tamin + ", tamax=" + tamax + ", vis=" + vis + ", geo700=" + geo700 + ", geo850=" + geo850
+				+ ", geo925=" + geo925 + ", rviento=" + rviento + ", nieve=" + nieve + "]";
+	}
+	
+	
 }
