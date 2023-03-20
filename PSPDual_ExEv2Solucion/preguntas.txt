@@ -1,0 +1,3 @@
+Pregunta [pregunta=Capital de España, respuesta=Madrid, fechaHora=Mon Mar 20 18:04:47 CET 2023, ipCliente=/127.0.0.1]
+Pregunta [pregunta=Capital de España, respuesta=Madrid, fechaHora=Mon Mar 20 18:05:06 CET 2023, ipCliente=/127.0.0.1]
+Pregunta [pregunta=Capital de España, respuesta=Madrid2, fechaHora=Mon Mar 20 18:05:23 CET 2023, ipCliente=/127.0.0.1]

@@ -16,7 +16,7 @@ public class SubirArchivo {
 		FTPClient cliente = new FTPClient();
 		cliente.connect("127.0.0.1");
 
-		boolean conectado = cliente.login("user", "password");
+		boolean conectado = cliente.login("ftp", "password");
 		//Para establecer modo pasivo (depende de la configuración del servidor)
 		//cliente.enterLocalPassiveMode();
 		
