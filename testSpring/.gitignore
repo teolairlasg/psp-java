@@ -36,3 +36,4 @@ out/
 ### VS Code ###
 .vscode/
 /target/
+/.apt_generated_tests/

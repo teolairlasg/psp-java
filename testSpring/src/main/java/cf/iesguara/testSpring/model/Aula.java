@@ -23,4 +23,5 @@ public class Aula {
 	/* número de ordenadores del aula*/
 	@Column
 	private int ordenadores;
+	public Aula() {}; 
 }
